@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Dates - The Perfect Match</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand highlighted-name" href="index.html">The Perfect Match</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Wedding Website</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="destination.html">Destination Wedding</a></li>
+        <li class="nav-item"><a class="nav-link active" href="dates.html">Save the Dates</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center text-white py-5">
+  <div class="container">
+    <h1 class="display-5 fw-bold section-heading" style="font-family: 'Great Vibes', cursive;">Create & Send Your Perfect Save-the-Date</h1>
+    <p class="lead mt-3" style="color: black;">Make your guests mark the day in style — explore elegant templates, personalize instantly, and share online or by print.</p>
+    <a href="#dates" class="btn btn-stylish mt-4">Explore Events</a>
+  </div>
+</section>
+<style>
+  .btn-stylish {
+  background: linear-gradient(135deg, #f67280, #f8b195);
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 15px rgba(246, 114, 128, 0.3);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.btn-stylish:hover {
+  background: linear-gradient(135deg, #f67280, #c06c84);
+  box-shadow: 0 8px 20px rgba(246, 114, 128, 0.5);
+  transform: translateY(-3px);
+  color: #fff;
+}
+
+</style>
+
+<!-- About Section -->
+<section class="about-section container py-5">
+  <div class="row align-items-center">
+    <div class="col-md-6 mb-4">
+      <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?auto=format&fit=crop&w=700&q=80" alt="Save the Date Cards" class="img-fluid rounded shadow">
+    </div>
+    <div class="col-md-6">
+      <h2 class="mb-3" style="color: #f67280;">Why Save-the-Dates Matter</h2>
+      <p>Save-the-Dates are the first glimpse of your big day — a way to announce your wedding and help guests reserve the date well in advance. At <strong>The Perfect Match</strong>, we make it easy for you to design, customize, and send stunning digital or print versions effortlessly.</p>
+      <ul>
+        <li>✨ Professionally designed templates</li>
+        <li>🖋️ Fully customizable text and colors</li>
+        <li>📅 Integration with your wedding website & RSVP system</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Save The Date Form Section -->
+<section id="save-date" class="container py-5">
+  <h2 class="section-heading text-center mb-4" style="font-family: 'Great Vibes', cursivr;">
+    Save The Date
+  </h2>
+  <p class="text-center mb-5 text-muted">
+    Fill in your special details and let your guests know when love blooms 💞
+  </p>
+
+  <div class="row justify-content-center">
+    <div class="col-lg-6 col-md-8">
+      <form id="saveDateForm" class="p-4 form-card shadow-lg">
+        <div class="mb-3">
+          <label for="coupleName" class="form-label">Couple's Names</label>
+          <input type="text" class="form-control" id="coupleName" placeholder="e.g., Rahul & Priya" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="weddingDate" class="form-label">Wedding Date</label>
+          <input type="date" class="form-control" id="weddingDate" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="venue" class="form-label">Venue</label>
+          <input type="text" class="form-control" id="venue" placeholder="e.g., Sunset Garden, Mumbai" required>
+        </div>
+
+        <div class="text-center mt-4">
+          <button type="submit" class="btn-stylish px-5 py-2">Save the Date</button>
+        </div>
+      </form>
+
+      <!-- Confirmation Message -->
+      <div id="confirmationMessage" class="text-center mt-5" style="display: none;">
+        <h4 style="color:#f67280; font-family:'Playfair Display', serif;">
+          💌 Your date has been saved successfully!
+        </h4>
+        <p class="text-muted">We’re so excited to celebrate your love story 💖</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dates Section -->
+<section id="dates" class="save-dates container py-5">
+  <h2 class="text-center mb-5 section-heading" style="font-family: 'Great Vibes', cursive;">
+    Our Wedding Timeline
+  </h2>
+  <div class="row g-4 justify-content-center text-center">
+    <!-- Engagement -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="event-card">
+        <img src="engagement.jpg" alt="Engagement">
+        <div class="event-content">
+          <h4>Engagement</h4>
+          <p>June 10th, 2025</p>
+          <p>Join us for our engagement ceremony as we start our journey together.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wedding Ceremony -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="event-card">
+        <img src="wedding ceremony.jpg" alt="Wedding Ceremony">
+        <div class="event-content">
+          <h4>Wedding Ceremony</h4>
+          <p>August 15th, 2025</p>
+          <p>Our main ceremony at Sunset Garden – a day full of love and memories.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reception -->
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="event-card">
+        <img src="reception.jpeg" alt="Reception">
+        <div class="event-content">
+          <h4>Reception</h4>
+          <p>August 16th, 2025</p>
+          <p>Celebrate with us at the reception with food, dance, and fun!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer py-5 mt-10">
+  <div class="container">
+    <div class="row text-white">
+      <!-- About -->
+      <div class="col-md-4 mb-4">
+        <h4 class="footer-title highlighted-name">The Perfect Match</h4>
+        <p>Your one-stop wedding planning platform to design, organize, and celebrate your dream event with ease.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links list-unstyled">
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="destination.html">Destination Packages</a></li>
+          <li><a href="dates.html">Save the Dates</a></li>
+        </ul>
+      </div>
+
+      <!-- Social & Contact -->
+      <div class="col-md-4 mb-4">
+        <h4 class="footer-title">Connect With Us</h4>
+        <p>Follow us on:</p>
+        <div class="footer-social mb-3">
+          <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+          <a href="#"><i class="bi bi-instagram"></i> Instagram</a><br>
+          <a href="#"><i class="bi bi-twitter"></i> Twitter</a>
+        </div>
+        <p>Email: <a href="mailto:support@theperfectmatch.com">support@theperfectmatch.com</a></p>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+    <div class="text-center mt-3">
+      <p>&copy; 2025 The Perfect Match. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

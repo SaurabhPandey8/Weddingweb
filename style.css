@@ -1,0 +1,752 @@
+/* General Styles */
+body {
+  background: linear-gradient(160deg, #fff7f2 0%, #fff0e5 100%); /* softer gradient */
+  color: #4d3b3b; 
+  margin: 0;
+  padding: 0;
+  line-height: 1.7; /* slightly taller for readability */
+  font-size: 16.5px;
+  letter-spacing: 0.6px;
+  scroll-behavior: smooth;
+  transition: all 0.4s ease;
+}
+
+.section-heading {
+  font-family: 'Great Vibes', cursive;
+  color: #d63384; /* deeper pink for elegance */
+  position: relative;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #f8b195, #ff6b6b);
+  margin: 12px auto 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+/* Navbar */
+.custom-navbar {
+  background: linear-gradient(90deg, #bd8670, #c61629);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1); /* subtle shadow for depth */
+  transition: background 0.3s;
+  border-radius: 0%;
+}
+
+.navbar-brand .li {
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-navbar .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.custom-navbar .nav-link {
+  color: #fff;
+  margin-right: 1rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #ffd699; /* soft gold */
+  transform: scale(1.1);
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Navbar toggler button */
+.custom-navbar .navbar-toggler {
+  border-color: #fff;
+  z-index: 1050; /* make sure it’s above other elements */
+}
+
+/* Navbar toggler icon */
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  width: 30px;
+  height: 30px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('shadii.jpg') center/cover no-repeat;
+  height: 80vh; /* more impact */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4); /* softer overlay */
+  backdrop-filter: blur(2px); /* adds dreamy blur effect */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  animation: fadeInUp 1s ease forwards;
+  max-width: 800px;
+  padding: 0 20px;
+  backdrop-filter: blur(4px); /* subtle glass effect */
+  border-radius: 25px;
+}
+
+/* Hero Heading */
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  color: #ffca7b; /* soft gold */
+  text-shadow: 2px 2px 12px rgba(198, 22, 41, 0.4); /* luxurious glow */
+  letter-spacing: 1.5px;
+}
+
+.hero p {
+  font-size: 1.6rem;
+  color: #ffe6d6; /* soft cream */
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.3);
+  margin-bottom: 40px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* RSVP Button */
+.btn-rsvp {
+  background: linear-gradient(90deg, #bd8670, #c61629);
+  color: #fff;
+  border: none;
+  padding: 14px 35px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(198,22,41,0.3);
+  transition: all 0.4s ease;
+}
+
+.btn-rsvp:hover {
+  background: linear-gradient(90deg, #f8b195, #ff6b6b);
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(198,22,41,0.4);
+  color: #fff;
+}
+
+/* Simple Fade In Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.3rem;
+  }
+  .btn-rsvp {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+  }
+  .btn-rsvp {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Image Wrapper */
+.about-img-wrapper {
+  width: 350px;
+  height: 350px;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(246,114,128,0.25);
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.about-img-wrapper:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 15px 35px rgba(246,114,128,0.35);
+}
+
+/* Image inside wrapper */
+.about-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+/* Text Box */
+.about-text {
+  background: linear-gradient(145deg, #fff0f3, #ffe6e1);
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(246,114,128,0.2);
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.about-text:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(246, 114, 128, 0.3);
+  background: linear-gradient(145deg, #fce4ec, #f8bbd0); /* soft pink gradient */
+}
+
+/* Subheading */
+.about-subheading {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2rem;
+  color: #f67280;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px rgba(246,114,128,0.3);
+}
+
+/* Paragraph */
+.about-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .about-img-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-img-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+  .about-heading {
+    font-size: 2.2rem;
+  }
+  .about-subheading {
+    font-size: 1.6rem;
+  }
+}
+
+
+.event-card {
+  border-radius: 30px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #fff0f5, #ffe6e8);
+  box-shadow: 0 15px 40px rgba(198,22,41,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.3s;
+  cursor: pointer;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.event-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+  border-bottom: 1px solid #ffd699;
+}
+.event-card:hover {
+  transform: translateY(-10px) rotate(-1deg);
+  box-shadow: 0 20px 50px rgba(198,22,41,0.3);
+  background: linear-gradient(145deg, #ffe6e8, #ffccd5);
+}
+.event-card:hover img {
+  transform: scale(1.07);
+}
+.event-card h4 {
+  font-size: 1.5rem;
+  font-family: 'Great Vibes', cursive;
+  color: #d63384;
+  margin: 15px 0 10px;
+}
+.event-card p {
+  font-size: 1rem;
+  color: #555;
+  padding: 0 15px;
+}
+
+.venue-card {
+  background-color: #fff3f0;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 15px;
+}
+
+.venue-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.venue-card h5 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.venue-card .venue-price {
+  color: #f67280;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.venue-card .venue-views {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.venue-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+.venue-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Swiper navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f67280;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f67280;
+}
+
+/* Sections */
+section {
+  padding: 80px 0;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #ff6b6b;
+}
+
+/* About Section */
+.about img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+/* Vendor Cards Container */
+#vendorCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* align cards to left */
+  margin: -5px; /* compensate for card margin */
+}
+
+/* Vendor Cards */
+.vendor-card {
+  background-color: #fff3f0; /* light pink background */
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* card shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px; /* spacing between cards */
+  flex: 0 0 calc(25% - 10px); /* 4 cards per row with margin */
+  box-sizing: border-box;
+}
+
+.vendor-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s;
+  box-shadow: none; /* remove shadow from image */
+}
+
+.vendor-card h5 {
+  color: #333;
+  margin: 15px 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: none; /* remove shadow from text */
+  padding: 0 10px; /* optional padding inside text */
+}
+
+/* Hover effect: lift card only */
+.vendor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25); /* lift effect */
+}
+
+.vendor-card:hover img {
+  transform: scale(1.05); /* zoom image on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .vendor-card {
+    flex: 0 0 calc(33.33% - 10px); /* 3 cards per row */
+  }
+}
+
+@media (max-width: 992px) {
+  .vendor-card {
+    flex: 0 0 calc(50% - 10px); /* 2 cards per row */
+  }
+}
+
+@media (max-width: 576px) {
+  .vendor-card {
+    flex: 0 0 100%; /* 1 card per row */
+  }
+}
+
+/* Event Cards */
+.event-card {
+  background-color: #fff3f0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+/* Gallery */
+.gallery img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.highlighted-name {
+  font-family: 'Great Vibes', cursive !important;
+  color: #f67280; /* Elegant pinkish tone */
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); /* subtle depth */
+  transition: color 0.3s;
+}
+
+.highlighted-name:hover {
+  color: #ffd699; /* Soft gold/peach for elegant hover */
+}
+.highlighted-name:focus,
+.highlighted-name:active {
+  font-family: 'Great Vibes', cursive !important;
+  outline: none; /* optional: remove focus outline */
+}
+
+.footer {
+  background: linear-gradient(135deg, #dc5160, #e97b7f);
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://www.transparenttextures.com/patterns/waves.png') repeat;
+  opacity: 0.05;
+  z-index: 0;
+}
+
+.footer > .container {
+  position: relative;
+  z-index: 1;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer a:hover {
+  color: #ffe6e1;
+  transform: translateX(5px);
+}
+
+.footer-title {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.footer-social i {
+  margin-right: 8px;
+  font-size: 1.1rem;
+}
+
+.footer-divider {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  margin: 2rem 0;
+}
+
+@media(max-width:768px){
+  .footer {
+    text-align: center;
+  }
+  .footer .col-md-4 {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Support Section Styling */
+.support {
+  background: #fff0f5; /* soft pastel pink background */
+  border-radius: 20px;
+  padding: 80px 20px;
+  margin-bottom: 50px;
+}
+
+.support h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.support h2::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: #f8b195;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.support p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.support-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+}
+
+.support-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.support-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.support-card h5 {
+  color: #f67280;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.support-card p {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 10px 0 15px;
+}
+
+.btn-outline-pink {
+  border: 2px solid #f67280;
+  color: #f67280;
+  border-radius: 50px;
+  padding: 6px 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-pink:hover {
+  background: #f67280;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Adjustments */
+
+/* Small devices (phones, <576px) */
+@media (max-width: 575px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .btn-rsvp {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+  .about-img-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+  .about-text {
+    padding: 15px;
+  }
+  .section-heading {
+    font-size: 2rem;
+  }
+  .event-card img,
+  .venue-card img,
+  .vendor-card img {
+    height: 180px;
+  }
+  .event-card h4,
+  .venue-card h5,
+  .vendor-card h5 {
+    font-size: 1rem;
+  }
+}
+
+/* Medium devices (tablets, <768px) */
+@media (max-width: 767px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  .btn-rsvp {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+  .about-img-wrapper {
+    width: 250px;
+    height: 250px;
+  }
+  .about-text {
+    padding: 20px;
+  }
+  .event-card img,
+  .venue-card img,
+  .vendor-card img {
+    height: 220px;
+  }
+}
+
+/* Large devices (desktops, <992px) */
+@media (max-width: 991px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  .hero p {
+    font-size: 1.4rem;
+  }
+  .about-img-wrapper {
+    width: 300px;
+    height: 300px;
+  }
+  .event-card img,
+  .venue-card img,
+  .vendor-card img {
+    height: 230px;
+  }
+  .venue-card,
+  .vendor-card {
+    margin: 10px;
+  }
+  #vendorCards {
+    justify-content: center;
+  }
+}
+
+/* Extra adjustments for very small text areas */
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  .hero p {
+    font-size: 0.95rem;
+  }
+  .btn-rsvp {
+    padding: 6px 18px;
+    font-size: 0.85rem;
+  }
+  .about-img-wrapper {
+    width: 180px;
+    height: 180px;
+  }
+  .event-card img,
+  .venue-card img,
+  .vendor-card img {
+    height: 160px;
+  }
+}
+
+/* Add spacing to navbar items when collapsed (small screens) */
+@media (max-width: 991.98px) { /* below lg breakpoint */
+  .navbar-nav .nav-item {
+    margin-bottom: 10px; /* vertical spacing between items */
+  }
+
+  .navbar-nav {
+    text-align: center; /* center the links */
+  }
+
+  .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.1rem; /* slightly bigger for mobile readability */
+  }
+}

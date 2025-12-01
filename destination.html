@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destination Wedding - The Perfect Match</title>
+  <!-- Bootstrap for responsive layout -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand highlighted-name" href="index.html">The Perfect Match</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Wedding Website</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Photo Gallery</a></li>
+        <li class="nav-item"><a class="nav-link active" href="destination.html">Destination Wedding</a></li>
+        <li class="nav-item"><a class="nav-link" href="dates.html">Save the Dates</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Description -->
+<section class="destination-info py-5 text-center bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="section-heading mb-4">Why Choose a Destination Wedding?</h1>
+  <p class="text-center mb-5">
+    The Perfect Match helps you plan your dream destination wedding with ease.  
+    Discover unique venues, from serene beaches to royal palaces, that suit every style.  
+    Connect with trusted vendors for catering, décor, photography, and more.  
+    Make your wedding memorable with a seamless experience for you and your guests.  
+    Explore, plan, and celebrate love in the perfect location with our platform.  
+    From intimate gatherings to grand celebrations, we provide all the resources you need.  
+    Get inspired by real weddings, tips, and curated packages tailored to your preferences.  
+    With The Perfect Match, every moment of your wedding journey is effortless and magical.  
+    Let us help you create memories that last a lifetime.
+  </p>
+  </div>
+  </div>
+  </div>
+</section>
+
+<!-- Popular Wedding Themes Section -->
+<section id="wedding-themes" class="wedding-themes container py-5">
+  <h2 class="section-heading text-center mb-5" style="font-family: 'Great Vibes', cursive;">
+    Popular Wedding Themes
+  </h2>
+
+  <div class="row g-4">
+
+    <!-- Theme 1: Beach Wedding -->
+    <div class="col-md-4">
+      <div class="theme-card text-center p-3 shadow-sm rounded">
+        <img src="beach.jpg" alt="Beach Wedding" class="img-fluid rounded mb-3">
+        <h5>Beach Wedding</h5>
+        <p>Celebrate your love by the ocean with a serene and romantic beachside ceremony.</p>
+      </div>
+    </div>
+
+    <!-- Theme 2: Royal/Palace Wedding -->
+    <div class="col-md-4">
+      <div class="theme-card text-center p-3 shadow-sm rounded">
+        <img src="royalpalace.jpg" alt="Royal Wedding" class="img-fluid rounded mb-3">
+        <h5>Royal/Palace Wedding</h5>
+        <p>Step into royalty with majestic palaces, grand halls, and regal décor for a fairytale wedding.</p>
+      </div>
+    </div>
+
+    <!-- Theme 3: Garden/Floral Wedding -->
+    <div class="col-md-4">
+      <div class="theme-card text-center p-3 shadow-sm rounded">
+        <img src="garden.jpg" alt="Garden Wedding" class="img-fluid rounded mb-3">
+        <h5>Garden/Floral Wedding</h5>
+        <p>Enchant your guests with a lush garden setting, filled with flowers and natural elegance.</p>
+      </div>
+    </div>
+
+    <!-- Theme 4: Modern/Contemporary Wedding -->
+    <div class="col-md-4">
+      <div class="theme-card text-center p-3 shadow-sm rounded">
+        <img src="modern.jpg" alt="Modern Wedding" class="img-fluid rounded mb-3">
+        <h5>Modern/Contemporary Wedding</h5>
+        <p>Sleek, stylish, and trendy settings with innovative décor and urban vibes.</p>
+      </div>
+    </div>
+
+    <!-- Theme 5: Rustic Wedding -->
+    <div class="col-md-4">
+      <div class="theme-card text-center p-3 shadow-sm rounded">
+        <img src="rustic.jpg" alt="Rustic Wedding" class="img-fluid rounded mb-3">
+        <h5>Rustic Wedding</h5>
+        <p>Celebrate in barns, farmhouses, or countryside venues with cozy and earthy vibes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.theme-card {
+  background-color: #fff3f0;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  overflow: hidden; /* ensures image doesn't overflow card */
+  height: 100%; /* keep cards same height if needed */
+}
+.theme-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.theme-card img {
+  width: 100%;       /* fill card width */
+  height: 250px;     /* fixed height for uniformity */
+  object-fit: cover; /* cover the area without stretching */
+  border-radius: 10px;
+}
+</style>
+
+<!-- Venues Section -->
+<section id="venues" class="venues container py-5">
+  <h2 class="section-heading text-center mb-5" style="font-family: 'Great Vibes', cursive;">Wedding Venues</h2>
+
+  <div id="venueWrapper">
+
+    <!-- Venue 1 -->
+    <div class="venue-item row align-items-center mb-5">
+      <div class="col-md-6">
+        <div class="venue-card">
+          <img src="venue1.webp" alt="Radisson Blu">
+          <h5>Radisson Blu Hotel Ranchi</h5>
+          <p class="venue-price">Price - ₹5,00,000 - ₹10,00,000</p>
+          <p class="venue-views">👁️ 1.2k Views</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="venue-description">
+          <p class="desc-text">
+            Radisson Blu Hotel Ranchi offers luxurious rooms and breathtaking views of the city skyline. Enjoy world-class dining, exceptional hospitality, and a beautiful rooftop terrace perfect for your wedding celebrations. The hotel provides ample banquet space and exquisite decor options, ensuring your special day is truly unforgettable. With easy access to the airport and city attractions, your guests will feel both comfort and elegance. Perfect for intimate or grand weddings, the venue offers flexible packages, bespoke services, and a memorable experience for everyone.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Venue 2 -->
+    <div class="venue-item row align-items-center mb-5">
+      <div class="col-md-6 order-md-2">
+        <div class="venue-card">
+          <img src="venue2.jpeg" alt="Suryagarh Jaisalmer">
+          <h5>Suryagarh Rajasthan</h5>
+          <p class="venue-price">Price - ₹8,00,000 - ₹15,00,000</p>
+          <p class="venue-views">👁️ 2.5k Views</p>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <div class="venue-description">
+          <p class="desc-text">
+            Suryagarh Jaisalmer is a majestic palace venue set amidst the golden sands of Rajasthan. Its regal architecture and luxurious interiors provide a fairy-tale setting for your wedding. Guests will enjoy royal hospitality, opulent decor, and exquisite dining experiences. Celebrate under the stars with traditional music and dance performances. Every corner of Suryagarh is perfect for photography. Customizable wedding packages ensure your event is unique and personal.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Venue 3 -->
+    <div class="venue-item row align-items-center mb-5">
+      <div class="col-md-6">
+        <div class="venue-card">
+          <img src="venue3.jpg" alt="Taj Mahal Palace Mumbai">
+          <h5>The Taj Mahal Palace Mumbai</h5>
+          <p class="venue-price">Price - ₹6,00,000 - ₹12,00,000</p>
+          <p class="venue-views">👁️ 1.8k Views</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="venue-description">
+          <p class="desc-text">
+            The Taj Mahal Palace Mumbai is an iconic venue that combines heritage charm with modern luxury. Its grand architecture, spacious banquet halls, and scenic sea views make it perfect for unforgettable weddings. Guests can enjoy world-class service, gourmet dining, and elegant rooms for accommodation. Each event is customizable with exquisite decor options to match your vision. Perfect for intimate gatherings or large-scale celebrations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Venue 4 -->
+    <div class="venue-item row align-items-center mb-5">
+      <div class="col-md-6 order-md-2">
+        <div class="venue-card">
+          <img src="venue4.webp" alt="The Leela Palace Jaipur">
+          <h5>The Leela Palace Jaipur</h5>
+          <p class="venue-price">Price - ₹7,00,000 - ₹13,00,000</p>
+          <p class="venue-views">👁️ 2k Views</p>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <div class="venue-description">
+          <p class="desc-text">
+            The Leela Palace Jaipur is a luxurious palace venue offering stunning architecture, lush gardens, and royal interiors. Ideal for extravagant weddings, it provides state-of-the-art banquet halls, personalized services, and exquisite dining experiences. Guests can enjoy traditional entertainment, spa facilities, and curated experiences. Perfect for intimate or grand celebrations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Venue 5 -->
+    <div class="venue-item row align-items-center mb-5">
+      <div class="col-md-6">
+        <div class="venue-card">
+          <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=600&q=80" alt="Royal Garden">
+          <h5>Royal Garden</h5>
+          <p class="venue-price">Price - ₹10,00,000 - ₹20,00,000</p>
+          <p class="venue-views">👁️ 3k Views</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="venue-description">
+          <p class="desc-text">
+            Royal Garden provides a serene and elegant outdoor setting for your wedding. Its lush greenery, floral arrangements, and open spaces allow for both intimate ceremonies and large gatherings. Guests can enjoy tranquil surroundings, scenic photography spots, and exceptional catering. The venue ensures every wedding is personalized, luxurious, and unforgettable.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Venue 6 -->
+    <div class="venue-item row align-items-center mb-5">
+      <div class="col-md-6 order-md-2">
+        <div class="venue-card">
+          <img src="venue6.jpg" alt="Taj Lake Palace">
+          <h5>Taj Lake Palace</h5>
+          <p class="venue-price">Price - ₹6,50,000 - ₹14,00,000</p>
+          <p class="venue-views">👁️ 1.5k Views</p>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <div class="venue-description">
+          <p class="desc-text">
+            Taj Lake Palace is a floating palace in the middle of Lake Pichola, offering breathtaking views and romantic settings. Its grand halls, luxury rooms, and scenic surroundings make it ideal for fairy-tale weddings. Guests can enjoy boat arrivals, rooftop dining, and customized wedding experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Venue 7 -->
+    <div class="venue-item row align-items-center mb-5">
+      <div class="col-md-6">
+        <div class="venue-card">
+          <img src="venue5.webp" alt="Narendra Bhawan">
+          <h5>Narendra Bhawan</h5>
+          <p class="venue-price">Price - ₹6,50,000 - ₹14,00,000</p>
+          <p class="venue-views">👁️ 1.5k Views</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="venue-description">
+          <p class="desc-text">
+            Narendra Bhawan is a heritage palace offering a luxurious and authentic royal experience. Its stunning architecture, elegant banquet halls, and royal decor create a majestic atmosphere. Guests can enjoy guided tours, curated dining experiences, and personalized services. Perfect for creating unforgettable memories in a regal setting.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.venue-card {
+  background-color: #fff3f0;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 15px 0;
+  padding: 15px;
+}
+.venue-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+.venue-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+.venue-card:hover img {
+  transform: scale(1.05);
+}
+
+.venue-description .desc-text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.venue-description.expanded .desc-text {
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+}
+</style>
+
+<!-- Footer -->
+<footer class="footer py-5 mt-10">
+  <div class="container">
+    <div class="row text-white">
+
+      <!-- About -->
+<div class="col-md-4 mb-4">
+  <h4 class="footer-title highlighted-name">The Perfect Match</h4>
+  <p>Your one-stop platform to discover the best wedding vendors, plan your perfect day, and make your dream wedding a reality.</p>
+</div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links list-unstyled">
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="destination.html">Destination Wedding Pricing</a></li>
+          <li><a href="dates.html">Save the Dates</a></li>
+        </ul>
+      </div>
+
+      <!-- Social & Contact -->
+      <div class="col-md-4 mb-4">
+        <h4 class="footer-title">Connect With Us</h4>
+        <p>Follow us on social media:</p>
+        <div class="footer-social mb-3">
+          <a href="#"><i class="bi bi-facebook"></i> Facebook</a><br>
+          <a href="#"><i class="bi bi-instagram"></i> Instagram</a><br>
+          <a href="#"><i class="bi bi-twitter"></i> Twitter</a>
+        </div>
+        <p>Email: <a href="mailto:emmaandliam@example.com">emmaandliam@example.com</a></p>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="text-center mt-3">
+      <p>&copy; 2025 The Perfect Match. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

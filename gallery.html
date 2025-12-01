@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Perfect Match Wedding Gallery</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow-sm sticky-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand highlighted-name" href="index.html">The Perfect Match</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Wedding Website</a></li>
+        <li class="nav-item"><a class="nav-link active" href="gallery.html">Photo Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="destination.html">Destination Wedding</a></li>
+        <li class="nav-item"><a class="nav-link" href="dates.html">Save the Dates</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero-gallery py-5 text-center bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="section-heading mb-4">Wedding Gallery</h1>
+        <p>
+          Our wedding was a journey of love, laughter, and cherished moments.  
+          From the joyous celebrations with family and friends to the intimate private vows,  
+          every moment was captured to tell our story.  
+          The laughter shared during the reception, the tears of happiness at the ceremony,  
+          and the heartfelt toasts are memories we will treasure forever.  
+          Every photograph reflects the warmth, love, and happiness of our special day.  
+          The vibrant colors of the decorations, the elegant attire of our guests,  
+          and the magical settings of each venue create timeless memories.  
+          This gallery is a window into our celebration, a collection of moments  
+          that we hope inspire and bring joy to everyone who sees them.  
+          Join us in reliving the magical moments that made our wedding unforgettable.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Gallery Section -->
+<section class="gallery container py-5">
+  <h2 class="mb-5 text-center section-heading">Our Wedding Moments</h2>
+  <div class="row g-4 gallery-row">
+
+    <!-- First 5 visible images -->
+    <div class="col-lg-4 col-md-6 gallery-item">
+      <div class="gallery-card">
+        <img src="gallery1.jpg" alt="Bride & Groom Entrance" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Bride & Groom Entrance</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 gallery-item">
+      <div class="gallery-card">
+        <img src="gallery2.jpg" alt="Wedding Rings Exchange" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Wedding Rings Exchange</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 gallery-item">
+      <div class="gallery-card">
+        <img src="gallery3.jpg" alt="First Dance" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">First Dance</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 gallery-item">
+      <div class="gallery-card">
+        <img src="gallery4.jpg" alt="Family Portraits" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Family Portraits</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 gallery-item">
+      <div class="gallery-card">
+        <img src="gallery5.webp" alt="Ceremony Highlights" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Ceremony Highlights</p>
+      </div>
+    </div>
+
+    <!-- Sixth image with See More overlay -->
+    <div class="col-lg-4 col-md-6 gallery-item see-more-card">
+      <div class="gallery-card position-relative">
+        <img src="cake.jpg" alt="Wedding Cake" class="gallery-img see-more-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Wedding Cake</p>
+        <div class="see-more-overlay d-flex justify-content-center align-items-center" id="seeMoreOverlay">
+          <button id="seeMoreBtn" class="btn btn-outline-light">See More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hidden images -->
+    <div class="col-lg-4 col-md-6 gallery-item hidden">
+      <div class="gallery-card">
+        <img src="gallery7.webp" alt="Bridal Party Fun" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Bridal Party Fun</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 gallery-item hidden">
+      <div class="gallery-card">
+        <img src="gallery8.jpg" alt="Ceremony Decor" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Ceremony Decor</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 gallery-item hidden">
+      <div class="gallery-card">
+        <img src="gallery9.jpg" alt="Reception Highlights" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Reception Highlights</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 gallery-item hidden">
+      <div class="gallery-card">
+        <img src="gallery10.h" alt="Haldi Ceremony" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Haldi Ceremony</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 gallery-item hidden">
+      <div class="gallery-card">
+        <img src="gallery11.jpg" alt="Evening Celebration" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Evening Celebration</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 gallery-item hidden">
+      <div class="gallery-card">
+        <img src="gallery12.jpeg" alt="Sparkler Send-Off" class="gallery-img" data-bs-toggle="modal" data-bs-target="#imageModal">
+        <p class="mt-2 text-center">Sparkler Send-Off</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Fullscreen Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen modal-dialog-centered">
+    <div class="modal-content bg-transparent border-0">
+      <div class="modal-body p-0">
+        <img src="" alt="Full Image" id="modalImage" class="w-100 h-100" style="object-fit: contain;">
+      </div>
+      <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // See More button
+  const seeMoreBtn = document.getElementById('seeMoreBtn');
+  const overlay = document.getElementById('seeMoreOverlay');
+
+  seeMoreBtn.addEventListener('click', () => {
+    document.querySelectorAll('.gallery-item.hidden').forEach(item => {
+      item.classList.remove('hidden');
+    });
+    overlay.remove(); // remove the overlay permanently
+  });
+
+  // Fullscreen modal
+  document.querySelectorAll('.gallery-img').forEach(img => {
+    img.addEventListener('click', (e) => {
+      const modalImg = document.getElementById('modalImage');
+      modalImg.src = e.target.src;
+    });
+  });
+});
+</script>
+
+<style>
+/* Gallery Image Styling */
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.gallery-item.hidden {
+  display: none;
+}
+.see-more-card {
+  position: relative;
+}
+.see-more-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.see-more-overlay:hover {
+  background: rgba(0,0,0,0.6);
+}
+.see-more-overlay button {
+  font-size: 1.2rem;
+}
+
+/* Modal Close Button Custom */
+.modal-content .btn-close {
+  background-color: rgba(245, 10, 10, 0.5); /* semi-transparent dark background */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.modal-content .btn-close::before,
+.modal-content .btn-close::after {
+  background-color: #fff; /* white X */
+}
+</style>
+
+
+<!-- Featured Moments Section -->
+<section class="featured-moments container py-5">
+  <h2 class="mb-5 text-center section-heading">Featured Moments</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <div class="theme-card">
+        <img src="featured1.jpg" alt="Sunset Beach Ceremony" class="featured-img">
+        <h5 class="mt-2 text-center">Sunset Beach Ceremony</h5>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="theme-card">
+        <img src="featured2.webp" alt="Grand Ballroom Entrance" class="featured-img">
+        <h5 class="mt-2 text-center">Grand Ballroom Entrance</h5>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.featured-img {
+  width: 100%;       /* Full width of the container */
+  height: 300px;     /* Fixed height for all images */
+  object-fit: cover; /* Ensures image fills the box without stretching */
+}
+.theme-card {
+  overflow: hidden; /* Ensures rounded corners apply properly */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+</style>
+
+
+<!-- Wedding Videos Section -->
+<section class="wedding-videos container py-5">
+  <h2 class="mb-5 text-center section-heading">Wedding Videos</h2>
+  <div class="row g-4">
+    
+    <div class="col-md-6">
+      <div class="theme-card text-center">
+        <video width="100%" height="315" controls>
+          <source src="video1.mp4" type="video/mp4">
+        </video>
+        <h5 class="mt-2">Bride & Groom Highlights</h5>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="theme-card text-center">
+        <video width="100%" height="315" controls>
+          <source src="video2.mp4" type="video/mp4">
+        </video>
+        <h5 class="mt-2">Reception Fun Moments</h5>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials container py-5">
+  <h2 class="mb-5 text-center section-heading">Testimonials</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="testimonial-card p-3 shadow-sm">
+        <p>"The Perfect Match made our wedding effortless and magical! Highly recommend."</p>
+        <h6>- Emma & Liam</h6>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="testimonial-card p-3 shadow-sm">
+        <p>"Amazing venue suggestions and flawless planning. Truly unforgettable!"</p>
+        <h6>- Rahul & Priya</h6>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="testimonial-card p-3 shadow-sm">
+        <p>"We loved every detail and the support we received from The Perfect Match team."</p>
+        <h6>- Ananya & Rohan</h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer py-5 mt-10 bg-dark text-white">
+  <div class="container">
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-md-4 mb-4">
+        <h4 class="footer-title highlighted-name">The Perfect Match</h4>
+        <p>Your one-stop platform to discover the best wedding vendors, plan your perfect day, and make your dream wedding a reality.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links list-unstyled">
+          <li><a href="gallery.html" class="text-white">Photo Gallery</a></li>
+          <li><a href="destination.html" class="text-white">Destination Wedding Pricing</a></li>
+          <li><a href="dates.html" class="text-white">Save the Dates</a></li>
+        </ul>
+      </div>
+
+      <!-- Social & Contact -->
+      <div class="col-md-4 mb-4">
+        <h4 class="footer-title">Connect With Us</h4>
+        <p>Follow us on social media:</p>
+        <div class="footer-social mb-3">
+          <a href="#" class="text-white">Facebook</a><br>
+          <a href="#" class="text-white">Instagram</a><br>
+          <a href="#" class="text-white">Twitter</a>
+        </div>
+        <p>Email: <a href="mailto:emmaandliam@example.com" class="text-white">emmaandliam@example.com</a></p>
+      </div>
+
+    </div>
+    <hr class="footer-divider bg-light">
+    <div class="text-center mt-3">
+      <p>&copy; 2025 The Perfect Match. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
